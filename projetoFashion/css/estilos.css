@@ -1,0 +1,182 @@
+body{
+	font-family: tahoma, arial, sans-serif;
+	margin:0;
+	padding: 0;
+}
+
+#container{
+	width: 70%;
+	margin: 50px auto 0;
+}
+
+/*HEADER*/
+.cabecalho{
+	position: relative;
+	background-image: url(../imagens/topo.jpg);
+	background-position: left center;
+	background-size: cover;
+	height: 500px;
+}
+
+.menu-principal{
+	position: relative;
+	height: 3rem;
+	/*width: 70%;*/
+	/*background-color: rgb(32,42,51);*/
+	background-color: rgb(16,20,28);
+}
+
+.menu-principal a{
+	text-decoration: none;
+	/*color:rgb(67,84,95);*/
+	color: #425564;
+	font-size: 10pt;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	transition:color .3s linear;
+}
+
+.menu-principal a:hover{
+	color:rgba(255,255,255,.7);
+}
+
+.menu-principal .logo{
+	/*position: absolute;
+	top:5px;
+	left: 135px;*/
+	margin:5px 0  0 135px;
+}
+
+.menu-principal ul{
+	position: absolute;
+	top: 0;
+	right: 10px;
+}
+.menu-principal ul li{
+	display: inline-block;
+	list-style: none;	
+	margin-right:15px;
+}
+
+/*MAIN*/
+.portifolio{
+	text-align: center;
+	width: 100%;
+	margin: 50px 0;
+}
+
+.portifolio h1{
+	font-size: 36px;
+	color:rgb(38,33,34);
+	/*color:#252525;*/
+	margin-bottom: 30px;
+}
+
+.portifolio p{
+	line-height: 2;
+	font-size: 16px;
+	color: rgb(80,100,100);
+	/*color: #555;*/
+	margin-bottom: 50px;
+}
+
+.gallery{
+	text-align: center;
+	margin-bottom: 400px;
+	color: rgb(80,100,100);
+}
+
+.card{
+	float: left;
+	width: 32%;
+	box-sizing: border-box;
+}
+
+.card-01, .card-02{
+	margin-right: 2%;
+}
+
+.card .nome{
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 2px;
+	margin-top: 10px;
+}
+
+.card .destaque{
+	position: relative;
+	top: -10px;
+	font-size: 10pt;
+}
+
+/*ABOUT*/
+
+.about{
+	clear: both;
+	/*height: 400px;*/
+	background-color: rgb(0,61,82);
+	background-image: url(../imagens/bg_detalhe.png);
+	background-position: right bottom;
+	background-repeat: no-repeat;
+	padding:100px;
+	color: #FFF;
+}
+
+.about h2{
+	font-size: 38pt;
+	text-transform: uppercase;
+	font-weight: normal;
+}
+
+.about p{
+	width: 70%;
+	line-height: 1.5;
+}
+
+/*CONTATO*/
+.contato{
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 20pt;
+	/*color: rgb(0,61,82);*/
+	color: #143F52;
+	line-height: 1;
+	margin:50px 0;
+	letter-spacing: 0px;
+	font-weight: bold;
+}
+
+.contato address{
+	font-style: normal;
+}
+
+.mapa iframe{
+	text-align: center;
+	width: 100%;
+	height: 400px;
+}
+
+.rodape{
+	text-align: center;
+	/*height: 50px;*/
+	padding: 10px;
+	font-size: 12px;
+	/*background-color: rgb(0,61,82);*/
+	background-color: #0B171F;
+	/*color:rgba(255,255,255,.2);*/
+	color: #6F8597;
+	font-weight: bold;
+	margin-top: 50px;
+	position: relative;
+	bottom: 0;
+}
+
+.rodape:hover{
+	color:#FFF;
+	transition: ease color .5s;
+}
+
+.rodape p{
+	/*line-height: 50px;*/
+	letter-spacing: 5px;
+}

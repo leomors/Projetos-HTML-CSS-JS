@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Efeitos Hover</title>
+	<style type="text/css">
+		body{
+			font-family: sans-serif;
+		}
+		.container{
+			padding: 0 10px;
+			display: flex;
+			
+		}
+		.botoes, .efeito{
+			width: 300px;
+			margin: 0 auto 40px;
+			display: block;
+		}
+		a{
+			text-decoration: none;
+			color:white;
+			padding: 10px;
+			background-color: tomato;
+			transition: .5s ease;
+			position: relative;
+			text-transform: uppercase;
+			letter-spacing: 0px;
+		}
+
+		.efeito1::after{
+			content: '';
+			width: 0%;
+			height: 4px;
+			display: block;
+			bottom: 0;
+			right: 50%;
+			position: absolute;
+			background-color: red;
+			transition: .5s ease;
+		}
+		.efeito1:hover:after{
+			content: '';
+			width: 50%;
+		}
+		.efeito1::before{
+			content: '';
+			width: 0%;
+			height: 4px;
+			display: block;
+			bottom: 0;
+			left: 50%;
+			position: absolute;
+			background-color: red;
+			transition: .5s ease;
+		}
+		.efeito1:hover:before{
+			content: '';
+			width: 50%;
+		}
+		.efeito2::after{
+			content: '';
+			width: 0%;
+			height: 4px;
+			display: block;
+			bottom: 0;
+			left: 0%;
+			position: absolute;
+			background-color: red;
+			transition: .5s ease;
+		}
+		.efeito2:hover:after{
+			content: '';
+			width: 100%;
+		}
+		.efeito3::after{
+			content: '';
+			width: 0%;
+			height: 4px;
+			display: block;
+			bottom: 0;
+			left: 0;
+			position: absolute;
+			background-color: red;
+			transition: .5s ease;
+		}
+		.efeito3:hover:after{
+			content: '';
+			width: 50%;
+		}
+		.efeito3::before{
+			content: '';
+			width: 0%;
+			height: 4px;
+			display: block;
+			bottom: 0;
+			right: 0;
+			position: absolute;
+			background-color: red;
+			transition: .5s ease;
+		}
+		.efeito3:hover:before{
+			content: '';
+			width: 50%;
+		}
+		.efeito{
+			background-color: orange;
+			height: 200px;
+			text-align: center;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			color: white;
+			text-transform: uppercase;
+			position: relative;
+			cursor: pointer;
+		}
+		.efeito::after{
+			content: '';
+			position: absolute;
+			width: 0%;
+			height: 0%;
+			top: 0;
+			background-color: rgba(0,0,0,.2);
+			transition: .5s ease;
+		}
+		.efeito:hover::after{
+			content: '';
+			width: 100%;
+			height: 50%;
+		}
+		.efeito::before{
+			content: '';
+			position: absolute;
+			width: 0%;
+			height: 0%;
+			bottom: 0;
+			right: 0;
+			background-color: rgba(0,0,0,.2);
+			transition: .5s ease;
+		}
+		.efeito:hover::before{
+			content: '';
+			width: 100%;
+			height: 50%;
+		}
+
+		.card{
+			width: 20vw;
+			background-color: indigo;
+			padding: 5px 10px;
+			cursor: pointer;
+			transition: all .5s ease-in-out;
+			margin:5px 15px;
+		}
+
+		.card-header h1{
+			color: white;
+		}
+		.card-text{
+			color:white;
+		}
+
+		.card:hover{
+			transform: scale(1.1);
+			background-color: rgba(0,0,0,.1);
+		}
+		.secao{
+			display: flex;
+			flex-direction: row;
+			background-color: indigo;
+		}
+	</style>
+</head>
+<body>
+	<div class="botoes">
+		<a href="#" class="efeito1">Teste</a>
+		<a href="#" class="efeito2">Teste</a>
+		<a href="#" class="efeito3">Teste</a>
+	</div>
+	<div class="efeito">
+		Lorem ipsum sit dolor amet, consectetur...
+	</div>
+	
+
+	<div class="secao">
+		<div class="container">
+		<div class="card">
+			<div class="card-header">
+				<h1>Título</h1>
+			</div>
+				<div class="card-text">
+					<p>
+						Lorem ipsum sit dolor amet, consectetur...
+					</p>
+				</div>
+		</div>
+			<div class="card">
+				<div class="card-header">
+					<h1>Título</h1>
+				</div>
+					<div class="card-text">
+						<p>
+							Lorem ipsum sit dolor amet, consectetur...
+						</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+</body>
+</html>

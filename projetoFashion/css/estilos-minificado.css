@@ -1,0 +1,129 @@
+body{font-family: sans-serif;width: 70%;margin: 50px auto 0;}.cabecalho{background-image: url(../imagens/topo.jpg);background-position: left center;background-size: cover;height: 500px;}.menu-principal{position: relative;height: 3rem;background-color: rgb(32,42,51);}.menu-principal a{text-decoration: none;color:rgb(67,84,95);font-size: 10pt;}.menu-principal a:hover{color:rgba(255,255,255,.7);transition: ease-in-out color .5s;}
+
+.menu-principal .logo{
+	position: absolute;
+	top:0;
+	padding-top: 5px;
+	left: 100px;
+}
+
+.menu-principal ul{
+	position: absolute;
+	top: 0;
+	right: 10px;
+}
+.menu-principal ul li{
+	display: inline-block;
+	list-style: none;
+	text-transform: uppercase;
+	margin-right:30px;
+	letter-spacing: 5px;
+}
+
+/*MAIN*/
+.portifolio{
+	text-align: center;
+	width: 100%;
+	margin: 50px 0;
+}
+
+.portifolio h1{
+	font-size: 28pt;
+	color:rgb(38,33,34);
+	margin-bottom: 15px;
+}
+
+.portifolio p{
+	line-height: 1.5;
+	color: rgb(80,100,100);
+	margin-bottom: 50px;
+}
+
+.gallery{
+	text-align: center;
+	margin-bottom: 400px;
+}
+
+.card{
+	float: left;
+	width: 32%;
+	box-sizing: border-box;
+}
+
+.card-01, .card-02{
+	margin-right: 2%;
+}
+
+.card .nome{
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #666;
+	letter-spacing: 2px;
+	margin-top: 10px;
+}
+
+.card .destaque{
+	position: relative;
+	top: -10px;
+	color: #666;
+	font-size: 10pt;
+
+}
+
+.about{
+	clear: both;
+	height: 400px;
+	background-color: rgb(0,61,82);
+	background-image: url(../imagens/bg_detalhe.png);
+	background-position: right bottom;
+	background-repeat: no-repeat;
+	padding:100px;
+	color: #FFF;
+}
+
+.about h2{
+	font-size: 40pt;
+}
+
+.about p{
+	width: 70%;
+	line-height: 1.5;
+}
+
+.contato{
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 20pt;
+	color: rgb(0,61,82);
+	line-height: 0.2;
+	margin:50px 0;
+	letter-spacing: 0px;
+}
+
+.contato p{
+	font-weight: bold;
+}
+
+.mapa{
+	text-align: center;
+}
+
+.rodape{
+	text-align: center;
+	height: 50px;
+	background-color: rgb(0,61,82);
+	color:rgba(255,255,255,.2);
+	font-weight: bold;
+	margin-top: 50px;
+	position: relative;
+	bottom: 0;
+}
+
+.rodape:hover{
+	color:#FFF;
+	transition: ease color .5s;
+}
+
+.rodape p{
+	line-height: 50px;
+}
